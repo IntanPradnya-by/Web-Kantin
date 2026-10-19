@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>KantinKu - Kantin Sekolah</title>
+    <link
+      rel="stylesheet"
+      href="style.css"
+    />
+  </head>
+  <body>
+    <header>
+      <h2>KantinKu</h2>
+      <nav>
+        <a href="#beranda">Beranda</a>
+        <a href="#menu">Menu</a>
+        <a href="#keranjang">Keranjang</a>
+      </nav>
+    </header>
+
+    <section
+      class="hero"
+      id="beranda"
+    >
+      <h1>Selamat Datang di KantinKu!</h1>
+      <p>Makanan enak, harga bersahabat untuk siswa.</p>
+      <a
+        href="#menu"
+        class="tombol"
+        >Lihat Menu</a
+      >
+    </section>
+
+    <section
+      class="menu"
+      id="menu"
+    >
+      <h2>Menu Kantin</h2>
+
+      <div class="kartu">
+        <img src="assets/nasgor.jpg" />
+        <h3>Nasi Goreng</h3>
+
+        <p>Rp12000</p>
+        <button onclick="tambahPesanan('Nasi Goreng', 12000)">
+          Tambah Pesanan
+        </button>
+      </div>
+
+      <div class="kartu">
+        <img src="assets/mie.jpg" />
+        <h3>Mie Ayam</h3>
+        <p>Rp10000</p>
+        <button onclick="tambahPesanan('Mie Ayam', 10000)">
+          Tambah Pesanan
+        </button>
+      </div>
+
+      <div class="kartu">
+        <img src="assets/ayam.jpg" />
+        <h3>Ayam Goreng</h3>
+        <p>Rp15000</p>
+        <button onclick="tambahPesanan('Ayam Goreng', 15000)">
+          Tambah Pesanan
+        </button>
+      </div>
+
+      <div
+        class="daftar-menu"
+        id="daftar-menu"
+      ></div>
+    </section>
+
+    <section
+      class="keranjang"
+      id="keranjang"
+    >
+      <h2>Keranjang Belanja</h2>
+      <div id="isi-keranjang">
+        <p>Keranjang masih kosong.</p>
+      </div>
+
+      <h3>Total: <span id="total">Rp0</span></h3>
+      <button
+        class="tombol"
+        onclick="checkout()"
+      >
+        Pesan Sekarang
+      </button>
+    </section>
+
+    <footer>
+      <p>&copy; 2026 KantinKu | Kantin Sekolah</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
